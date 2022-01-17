@@ -40,9 +40,9 @@ class Calculator {
     etc
      */
     int fibonacciNumberFinder(int n){
-        if (n <= 1)
-            return n;
-        return fibonacciNumberFinder(n-1) + fibonacciNumberFinder(n-2);
+        double phi = (1 + Math.sqrt(5)) / 2;
+        return (int) Math.round(Math.pow(phi, n)
+                / Math.sqrt(5));
     }
 
 
