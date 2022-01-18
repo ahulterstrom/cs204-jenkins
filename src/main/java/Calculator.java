@@ -40,10 +40,9 @@ class Calculator {
     etc
      */
     int fibonacciNumberFinder(int n){
-        return Integer.parseInt("on no failure");
-//        double phi = (1 + Math.sqrt(5)) / 2;
-//        return (int) Math.round(Math.pow(phi, n)
-//                / Math.sqrt(5));
+        double phi = (1 + Math.sqrt(5)) / 2;
+        return (int) Math.round(Math.pow(phi, n)
+                / Math.sqrt(5));
     }
 
 
