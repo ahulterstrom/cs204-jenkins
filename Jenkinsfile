@@ -98,7 +98,7 @@ pipeline {
 
         failure{
 
-            mail to: 'youremail@gmail.com',
+            mail to: 'andrewhulterstrom@gmail.com',
 
                 subject: "Failed Pipeline: ${currentBuild.fullDisplayName}",
 
