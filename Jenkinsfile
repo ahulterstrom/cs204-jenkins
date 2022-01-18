@@ -92,20 +92,18 @@ pipeline {
             }
 
         }
+    }
 
-        post {
+    post {
 
-            failure{
+        failure{
 
-                mail to: 'youremail@gmail.com',
+            mail to: 'youremail@gmail.com',
 
-                    subject: "Failed Pipeline: ${currentBuild.fullDisplayName}",
+                subject: "Failed Pipeline: ${currentBuild.fullDisplayName}",
 
-                    body: "Something is wrong with ${env.BUILD_URL}"
-
-            }
+                body: "Something is wrong with ${env.BUILD_URL}"
 
         }
-
     }
 }
